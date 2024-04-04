@@ -3,15 +3,27 @@ body {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     min-width: 400px;
+    
 }
 
 input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border: 2px solid #566e49;
+    border: 2px solid #380303;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 5px;
+    font-weight: bold;
+    color: #2e1313;
+    background-color: rgba(51, 226, 226, 0.5);
+    
 }
+
+input::placeholder {
+    font-weight: bold;
+    opacity: 0.4;
+    color: rgb(86, 82, 82);
+  }
 
 button {
     background: #4a7e2c;
@@ -20,7 +32,12 @@ button {
     border: 1.5px solid #000000;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
 
 #delete-btn {
     background: red;
@@ -31,6 +48,7 @@ ul {
     margin-top: 20px;
     list-style: none;
     padding-left: 0;
+    max-height: 20%;
 }
 
 li {
@@ -38,7 +56,8 @@ li {
 }
 
 a {
-    color: #1510a5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #211cb8;
 }
 
 
